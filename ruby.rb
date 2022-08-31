@@ -67,7 +67,7 @@ dial_book = {
 
 
 
-def get_city_names(somehash)
+def get_country_name(somehash)
 
 somehash.each { |k, v| puts k }
 
@@ -91,9 +91,9 @@ break
 
 end
 
-puts "Which city do you want the area code for?"
+puts "Which country do you want the area code for?"
 
-get_city_names(dial_book)
+get_country_name(dial_book)
 
 puts "Enter your selection"
 
@@ -101,11 +101,11 @@ prompt = gets.chomp
 
 if dial_book.include?(prompt)
 
-puts "The area code for #{prompt} is #{get_area_code(dial_book, prompt)}"
+puts "The  code for #{prompt} is #{get_area_code(dial_book, prompt)}"
 
 else
 
-puts "You entered a city name not in the dictionary"
+puts "You entered a country name not in the dictionary"
 
 end
 
