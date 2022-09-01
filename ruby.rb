@@ -73,7 +73,7 @@ somehash.each { |k, v| puts k }
 
 end
 
-def get_area_code(somehash, key)
+def get_code(somehash, key)
 
 somehash[key]
 
@@ -81,7 +81,7 @@ end
 
 loop do
 
-puts "Do you want to lookup an area code based on a city name?(Y/N)"
+puts "Do you want to lookup an area code based on country name?(Y/N)"
 
 answer = gets.chomp
 
@@ -101,7 +101,7 @@ prompt = gets.chomp
 
 if dial_book.include?(prompt)
 
-puts "The  code for #{prompt} is #{get_area_code(dial_book, prompt)}"
+puts "The  code for #{prompt} is #{get_code(dial_book, prompt)}"
 
 else
 
